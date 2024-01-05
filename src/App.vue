@@ -1,53 +1,26 @@
 <!--
- * @Date: 2024-01-03 22:59:49
- * @LastEditTime: 2024-01-05 23:20:03
+ * @Date: 2024-01-06 00:04:44
+ * @LastEditTime: 2024-01-06 00:12:26
  * @Author: wangyongjie
  * @Note:  
 -->
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-// import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <div class="app">
+    <h1>你好</h1>
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
+<script lang="ts">
+export default {
+  name: 'app'
 }
+</script>
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+<style>
+.app {
+  background: #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 20px;
 }
 </style>
